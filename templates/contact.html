@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+<div class="contact-section py-5">
+    <div class="container">
+        <!-- Photo Section -->
+        <div class="row mb-4">
+            <div class="col-lg-6 mx-auto">
+                <img src="{{ url_for('static', filename='images/contact_photo.jpg') }}" alt="Contact Us" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <!-- Contact Form Title -->
+        <div class="row mb-4">
+            <div class="col text-center">
+                <h2>{{ _('Contact Form') }}</h2>
+            </div>
+        </div>
+
+        <!-- Contact Form Container -->
+        <div class="row">
+            <div class="col-lg-8 mx-auto" id="form-container">
+                {% include "contact_form.html" %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

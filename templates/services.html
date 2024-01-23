@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}Services{% endblock %}
+
+{% block content %}
+<div class="services-section py-5">
+    <div class="container">
+        <!-- Photo Section -->
+        <div class="row mb-4">
+            <div class="col-lg-6 mx-auto">
+                <img src="{{ url_for('static', filename='images/services_photo.jpg') }}" alt="Services" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <!-- Services Title -->
+        <div class="row mb-4">
+            <div class="col text-center">
+                <h2>{{ _('Services') }}</h2>
+            </div>
+        </div>
+
+        <!-- Services Description -->
+        <div class="row">
+            <!-- One-Stop Service -->
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">{{ _('One-Stop Service') }}</h3>
+                        <p class="card-text">{{ _('Product/Construction management and quality control in both US and Japan. Complete plant construction, transport and installation of equipment, follow-up services, etc. Help to reduce your overhead costs by simplifying your project management responsibilities.') }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Price Competitiveness -->
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">{{ _('Price Competitiveness') }}</h3>
+                        <p class="card-text">{{ _('For over 20 years, MPCI has maintained a high level of price competitiveness by utilizing experience and knowledge of our customers to their advantage as well as building strong relationships with our vendors. We conduct extensive equipment inspections at the onset of a project which allows you to reduce any additional work on your part as well as simplifying your project management responsibilities.') }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flexibility -->
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">{{ _('Flexibility') }}</h3>
+                        <p class="card-text">{{ _('MPCI strives to satisfy the same expectations of work abroad by utilizing Japanese personnel and coordination with Marubeni Protechs. We help collect important industrial information by utilizing our extensive network of “Sogo Shosha” (general trading company). Our electrical engineers, who are experienced in auto part manufacturing industry, are available 24/7 to provide outside service for designing and building production line, etc.') }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

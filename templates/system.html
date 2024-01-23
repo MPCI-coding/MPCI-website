@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block title %}Our System{% endblock %}
+
+{% block content %}
+<div class="system-section py-5">
+    <div class="container">
+        <!-- Photo Section -->
+        <div class="row mb-4">
+            <div class="col-lg-6 mx-auto">
+                <img src="{{ url_for('static', filename='images/system_photo.jpg') }}" alt="Our System" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <!-- Project Management System Title -->
+        <div class="row mb-4">
+            <div class="col text-center">
+                <h2>{{ _('Project Management System Between the U.S. and Japan') }}</h2>
+            </div>
+        </div>
+
+        <!-- System Process Description -->
+        <div class="row mb-4">
+            <!-- Japan Process -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">{{ _('Process in Japan') }}</h3>
+                        <p class="card-text">{{ _('Assembling & Testing Equipment in Japan') }}</p>
+                        <p class="card-text">{{ _('Demolition & Packaging of equipment for transportation') }}</p>
+                        <p class="card-text">{{ _('Ocean/Air Export') }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- US Process -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">{{ _('Process in the U.S.') }}</h3>
+                        <p class="card-text">{{ _('Custom Handling') }}</p>
+                        <p class="card-text">{{ _('Inland Transportation in the U.S.') }}</p>
+                        <p class="card-text">{{ _('Installation of Equipment in the U.S.') }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- USA and Japan Coordination -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">USA</h3>
+                        <p class="card-text">Marubeni Plant Contractor, Inc. coordinates work to be done in the U.S., including mechanical construction, electrical construction, and utility construction.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Japan</h3>
+                        <p class="card-text">Marubeni Protechs Corporation coordinates work to be done in Japan, including equipment pick-up, packaging, and shipment preparation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conclusion -->
+        <div class="row mt-4">
+            <div class="col-md-12 text-center">
+                <p>MPCI and MPC will coordinate ocean, air, and inland transportation for smooth transition.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

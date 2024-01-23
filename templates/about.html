@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+<div class="about-section py-5">
+    <div class="container">
+        <!-- Image Section -->
+        <div class="row mb-4">
+            <div class="col-lg-6 mx-auto">
+                <img src="{{ url_for('static', filename='images/about_us_image.jpg') }}" alt="About Us" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <!-- History Section Card -->
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">{{ _('Our History') }}</h2>
+                        <p class="card-text">{{ _('In 1988, Marubeni Plant Contractor, Inc. (MPCI) was established as a subsidiary of Marubeni Protechs Corporation. MPCI has two offices in Charlotte, NC and Indianapolis, IN.') }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Section and Services List Card -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">{{ _('Our Business') }}</h2>
+                        <p class="card-text">{{ _('MPCI offers complete contract packages, including project financing, that are tailored to your needs. Single-source responsibility is the cornerstone of our philosophy along with quality standards to satisfy the most demanding project requirements. We demonstrate commitment to your budgets and time constraints. Our approach allows you the flexibility to concentrate your resources on your own core business needs.') }}</p>
+                        
+                        <h3>{{ _('Services') }}</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">{{ _('Total plant construction') }}</li>
+                            <li class="list-group-item">{{ _('Equipment installation for manufacturing facilities') }}</li>
+                            <li class="list-group-item">{{ _('Local equipment procurement') }}</li>
+                            <li class="list-group-item">{{ _('Plant maintenance') }}</li>
+                            <li class="list-group-item">{{ _('Local, long distance, and international transportation') }}</li>
+                            <li class="list-group-item">{{ _('Licensed general contracting') }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

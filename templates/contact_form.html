@@ -1,0 +1,68 @@
+<form hx-post="/contact-form" hx-swap="outerHTML">
+    <h2 class="lead">Get a Quote</h2>
+    <!-- CSRF Token -->
+    {{ form.hidden_tag() }}
+
+    <!-- Name Field -->
+    <div class="form-group">
+        {{ form.name.label(class="form-label") }}
+        {{ form.name(class="form-control") }}
+    </div>
+
+    <!-- Email Field -->
+    <div class="form-group">
+        {{ form.email.label(class="form-label") }}
+        {{ form.email(class="form-control") }}
+    </div>
+
+    <!-- Service Field -->
+    <div class="form-group">
+        {{ form.service.label(class="form-label") }}
+        {{ form.service(class="form-control") }}
+    </div>
+
+    <!-- Layout Available Field -->
+    <div class="form-check m-2">
+        {{ form.layoutAvailable(class="form-check-input") }}
+        {{ form.layoutAvailable.label(class="form-check-label") }}
+    </div>
+
+    <!-- Layout Drawing Field -->
+    <div class="form-group">
+        {{ form.layoutDrawing.label(class="form-label") }}
+        {{ form.layoutDrawing(class="form-control") }}
+    </div>
+
+    <!-- Layout Description Field -->
+    <div class="form-group">
+        {{ form.layoutDescription.label(class="form-label") }}
+        {{ form.layoutDescription(class="form-control") }}
+    </div>
+
+    <!-- Packing List Available Field -->
+    <div class="form-check m-2">
+        {{ form.packingListAvailable(class="form-check-input") }}
+        {{ form.packingListAvailable.label(class="form-check-label") }}
+    </div>
+
+    <!-- Packing List Field -->
+    <div class="form-group">
+        {{ form.packingList.label(class="form-label") }}
+        {{ form.packingList(class="form-control") }}
+    </div>
+
+    <!-- Packing List Description Field -->
+    <div class="form-group">
+        {{ form.packingListDescription.label(class="form-label") }}
+        {{ form.packingListDescription(class="form-control") }}
+    </div>
+
+    <!-- Additional Questions Field -->
+    <div class="form-group">
+        {{ form.additionalQuestions.label(class="form-label") }}
+        {{ form.additionalQuestions(class="form-control") }}
+    </div>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit" class="btn btn-primary mt-3">
+</form>
